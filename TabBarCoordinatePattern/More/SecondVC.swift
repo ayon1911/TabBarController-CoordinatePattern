@@ -29,9 +29,7 @@ class SecondVC: UIViewController, CustomBackNavigationButton {
 
 extension UINavigationController {
     func getPreviousViewController() -> UIViewController? {
-        let count = viewControllers.count
-        guard count > 1 else { return nil }
-        return viewControllers[count - 2]
+        return viewControllers.count > 1 ? viewControllers[viewControllers.count - 2] : nil
     }
 }
 
