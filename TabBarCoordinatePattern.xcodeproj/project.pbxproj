@@ -12,6 +12,14 @@
 		B60AB99B227440D10004A701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60AB999227440D10004A701 /* Main.storyboard */; };
 		B60AB99D227440D20004A701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60AB99C227440D20004A701 /* Assets.xcassets */; };
 		B60AB9A0227440D20004A701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60AB99E227440D20004A701 /* LaunchScreen.storyboard */; };
+		B60AB9A8227440F90004A701 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9A7227440F90004A701 /* MainTabBarController.swift */; };
+		B60AB9AA227441310004A701 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9A9227441310004A701 /* HomeVC.swift */; };
+		B60AB9AC227441650004A701 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9AB227441650004A701 /* MoreVC.swift */; };
+		B60AB9AE227441970004A701 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9AD227441970004A701 /* Coordinator.swift */; };
+		B60AB9B02275BC890004A701 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9AF2275BC890004A701 /* HomeCoordinator.swift */; };
+		B60AB9B22275BE1A0004A701 /* MoreCoordiantor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9B12275BE1A0004A701 /* MoreCoordiantor.swift */; };
+		B60AB9B72275C14F0004A701 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9B62275C14F0004A701 /* FirstVC.swift */; };
+		B60AB9B92275C2780004A701 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AB9B82275C2780004A701 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		B60AB99C227440D20004A701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60AB99F227440D20004A701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60AB9A1227440D20004A701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60AB9A7227440F90004A701 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B60AB9A9227441310004A701 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B60AB9AB227441650004A701 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		B60AB9AD227441970004A701 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B60AB9AF2275BC890004A701 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B60AB9B12275BE1A0004A701 /* MoreCoordiantor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCoordiantor.swift; sourceTree = "<group>"; };
+		B60AB9B62275C14F0004A701 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		B60AB9B82275C2780004A701 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,7 @@
 		B60AB989227440D10004A701 = {
 			isa = PBXGroup;
 			children = (
+				B60AB9B52275BF630004A701 /* MainTabBar */,
 				B60AB994227440D10004A701 /* TabBarCoordinatePattern */,
 				B60AB993227440D10004A701 /* Products */,
 			);
@@ -54,6 +71,10 @@
 		B60AB994227440D10004A701 /* TabBarCoordinatePattern */ = {
 			isa = PBXGroup;
 			children = (
+				B60AB9A7227440F90004A701 /* MainTabBarController.swift */,
+				B60AB9AD227441970004A701 /* Coordinator.swift */,
+				B60AB9B42275BF570004A701 /* More */,
+				B60AB9B32275BF4C0004A701 /* Home */,
 				B60AB995227440D10004A701 /* AppDelegate.swift */,
 				B60AB997227440D10004A701 /* ViewController.swift */,
 				B60AB999227440D10004A701 /* Main.storyboard */,
@@ -62,6 +83,33 @@
 				B60AB9A1227440D20004A701 /* Info.plist */,
 			);
 			path = TabBarCoordinatePattern;
+			sourceTree = "<group>";
+		};
+		B60AB9B32275BF4C0004A701 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B60AB9A9227441310004A701 /* HomeVC.swift */,
+				B60AB9AF2275BC890004A701 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B60AB9B42275BF570004A701 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				B60AB9AB227441650004A701 /* MoreVC.swift */,
+				B60AB9B62275C14F0004A701 /* FirstVC.swift */,
+				B60AB9B82275C2780004A701 /* SecondVC.swift */,
+				B60AB9B12275BE1A0004A701 /* MoreCoordiantor.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		B60AB9B52275BF630004A701 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60AB998227440D10004A701 /* ViewController.swift in Sources */,
+				B60AB9AA227441310004A701 /* HomeVC.swift in Sources */,
+				B60AB9AE227441970004A701 /* Coordinator.swift in Sources */,
 				B60AB996227440D10004A701 /* AppDelegate.swift in Sources */,
+				B60AB9A8227440F90004A701 /* MainTabBarController.swift in Sources */,
+				B60AB9B02275BC890004A701 /* HomeCoordinator.swift in Sources */,
+				B60AB9B92275C2780004A701 /* SecondVC.swift in Sources */,
+				B60AB9AC227441650004A701 /* MoreVC.swift in Sources */,
+				B60AB9B72275C14F0004A701 /* FirstVC.swift in Sources */,
+				B60AB9B22275BE1A0004A701 /* MoreCoordiantor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
